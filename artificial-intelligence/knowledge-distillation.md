@@ -8,8 +8,7 @@
   * early stopping KD
   * sequential KD
   * early stopped teachers are better
-* personal opinion: teachers to complex than students are actually bad teachers\
-  \\
+* personal opinion: teachers to complex than students are actually bad teachers
 
 ### Understanding and Improving Knowledge Distillation ([arxiv](https://arxiv.org/pdf/2002.03532))
 
@@ -18,15 +17,13 @@
   * label smoothing
   * domain knowledge of class relationships (Like class 7 and class 2 in MNIST dataset)
   * gradient rescaling based on teachers measurement of instance difficulty
-* personal opinion: all 3 effects are important\
-  \\
+* personal opinion: all 3 effects are important
 
 ### Data-Free Knowledge Distillation for Deep Neural Networks ([ICCV 2019](https://openaccess.thecvf.com/content\_ICCV\_2019/papers/Chen\_Data-Free\_Learning\_of\_Student\_Networks\_ICCV\_2019\_paper.pdf))
 
 * goal: Knowledge Distillation without access to data
 * idea: use Activation layer statistics as metadata to reconstruct dataset for distillation
-* personal opinion: isn't deep inversion like better?? This idea need additional metadata, can lead to privacy issues\
-  \\
+* personal opinion: isn't deep inversion like better?? This idea need additional metadata, can lead to privacy issues
 
 ### Online Knowledge Distillation with diverse peers ([AAAI 2020](https://arxiv.org/pdf/1912.00350.pdf))
 
@@ -38,8 +35,7 @@
 * idea: two level distillation
   1. self attention based targets for distillation
   2. ensemble output for distillation to group leader(groups student model)
-* diversity between models can be maintained\
-  \\
+* diversity between models can be maintained
 
 ### Relational Knowledge Distillation ([CVPR 2019](https://openaccess.thecvf.com/content\_CVPR\_2019/papers/Park\_Relational\_Knowledge\_Distillation\_CVPR\_2019\_paper.pdf))
 
@@ -49,8 +45,7 @@
   * Relational KD: loss between relational functions
 * transferring structural knowledge using mutual relations of data example
 * RKD-D, RKD-A (relational function type)
-* better when used with conventional KD\
-  \\
+* better when used with conventional KD
 
 ### Be Your Own Teacher: Improve the Performance of Convolutional Neural Networks via Self Distillation ([ICCV 2019](https://openaccess.thecvf.com/content\_ICCV\_2019/papers/Zhang\_Be\_Your\_Own\_Teacher\_Improve\_the\_Performance\_of\_Convolutional\_Neural\_ICCV\_2019\_paper.pdf))
 
@@ -65,8 +60,7 @@
 * must check [github](https://github.com/ArchipLab-LinfengZhang/pytorch-self-distillation-final) for detail implementations (not in paper)
 * bottleneck structure different from paper
   * paper: no detail explaination about structure
-  * github: use 1 sepconv layer (basic block in separable convolution way??) instead of 1 resnet block\
-    \\
+  * github: use 1 sepconv layer (basic block in separable convolution way??) instead of 1 resnet block
 
 ### Towards Understanding Ensemble, Knowledge Distillation, and Self-Distillation in Deep Learning ([Microsoft](https://www.microsoft.com/en-us/research/blog/three-mysteries-in-deep-learning-ensemble-knowledge-distillation-and-self-distillation/))
 
@@ -74,15 +68,13 @@
 * Ensemble, Why work?: Multi view approach
 * Knowledge distillation: Forcing an individual model to learn multiple views
 * Self distillation: Implicitly combining ensemble and knowledge distillation (shallow classifiers work as an ensemble)
-* personal opinion: Didn't understand fully\
-  \\
+* personal opinion: Didn't understand fully
 
 ### Knowledge Distillation Meets Self-Supervision ([ECCV 2020](https://www.ecva.net/papers/eccv\_2020/papers\_ECCV/papers/123540562.pdf))
 
 * goal: propose SSKD framework better than other KD methods
 * Contrastive learning, self supervised learning
-* reading...\
-  \\
+* reading...
 
 ### Revisiting Knowledge Distillation via Label Smoothing Regularization ([CVPR 2020](https://openaccess.thecvf.com/content\_CVPR\_2020/papers/Yuan\_Revisiting\_Knowledge\_Distillation\_via\_Label\_Smoothing\_Regularization\_CVPR\_2020\_paper.pdf))
 
@@ -98,8 +90,7 @@
 * Teacher-free Knowledge Distillation
   * TfKD\_self: KD from same model structure pretrained
   * TfKD\_reg: use LSR as a virtual teacher model
-    * different from LSR as τ >> 1\
-      \\
+    * different from LSR as τ >> 1
 
 ### Deep Mutual Learning ([CVPR 2018](https://openaccess.thecvf.com/content\_cvpr\_2018/papers/Zhang\_Deep\_Mutual\_Learning\_CVPR\_2018\_paper.pdf))
 
@@ -115,8 +106,7 @@
 * points to note:
   * ensemble teacher better?: learning from ensemble teacher was worse than learning each peers one by one
   * models become similar?: logits become similar, but aligning internal representations(such as features) diminish cohort diversity, damage ability of each network to teach
-  * semi-supervised learning: can be well used in semi supervised learning (subset of labelled data)\
-    \\
+  * semi-supervised learning: can be well used in semi supervised learning (subset of labelled data)
 
 ### FITNETS: Hints For Thin Deep Nets ([ICLR 2015](https://arxiv.org/pdf/1412.6550.pdf))
 
