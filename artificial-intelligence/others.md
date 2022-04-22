@@ -17,11 +17,13 @@
 *   Integrated Gradients:
 
     [![](https://github.com/ysy970923/study/raw/main/images/integrated\_gradients.PNG)](https://github.com/ysy970923/study/blob/main/images/integrated\_gradients.PNG)
-* remark: highly used in recent researches
+* remark: highly used in recent researches\
+  \\
 
 ### Similarity of Neural Network Representations Revisited ([ICML 2019](https://arxiv.org/pdf/1905.00414.pdf))
 
-* problem:
+* problem:\
+  \\
 
 ### Understanding Deep Learning requires Rethinking Generalization ([ICLR 2017](https://dl.acm.org/doi/pdf/10.1145/3446776))
 
@@ -46,7 +48,8 @@
   * convex models, simply solving gaussian kernel has good performance
   * adding implicit regularization gets better performance
   * but minimum norm might be bigger (does not predict generalization performance)
-* remark: not sure if I understood well
+* remark: not sure if I understood well\
+  \\
 
 ### Contrastive Loss
 
