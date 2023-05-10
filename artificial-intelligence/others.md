@@ -17,13 +17,11 @@
 *   Integrated Gradients:
 
     [![](https://github.com/ysy970923/study/raw/main/images/integrated\_gradients.PNG)](https://github.com/ysy970923/study/blob/main/images/integrated\_gradients.PNG)
-* remark: highly used in recent researches\
-  \\
+* remark: highly used in recent researches
 
 ### Similarity of Neural Network Representations Revisited ([ICML 2019](https://arxiv.org/pdf/1905.00414.pdf))
 
-* problem:\
-  \\
+* problem:
 
 ### Understanding Deep Learning requires Rethinking Generalization ([ICLR 2017](https://dl.acm.org/doi/pdf/10.1145/3446776))
 
@@ -48,8 +46,7 @@
   * convex models, simply solving gaussian kernel has good performance
   * adding implicit regularization gets better performance
   * but minimum norm might be bigger (does not predict generalization performance)
-* remark: not sure if I understood well\
-  \\
+* remark: not sure if I understood well
 
 ### Contrastive Loss
 
@@ -60,3 +57,19 @@
 ### DEEP COMPRESSION: COMPRESSING DEEP NEURAL NETWORKS WITH PRUNING, TRAINED QUANTIZATION AND HUFFMAN CODING ([ICLR 2016](https://arxiv.org/pdf/1510.00149.pdf))
 
 * concept: Compress Neural Network
+
+### Agree to Disagree: Diversity Through Disagreement for Better Transferability ([ICLR 2023](https://openreview.net/pdf?id=K7CbYQbyYhY))
+
+* Mitigate Simplicity loss by disagreeing with the simple ERM solution model.
+* Train with additional loss that indicates agreement on OOD data(OOD data is unlabeled)
+
+### Towards Understanding Ensemble, Knowledge Distillation and Self-Distillation in Deep Learning ([ICLR 2023](https://openreview.net/pdf?id=Uuf2q9TfXGA))
+
+* Why is ensemble good even though all the sub models are already train accuracy 100%?
+* How can the ensemble knowledge be later distilled into a single neural network?
+* Explanation through NTK is not enough. (Random feature mapping, Enlarging the feature space)
+  * Training average works even better
+  * Knowledge Distillation does not work.
+* Multi-View Data Distribution
+  * Individual Models pick up only single feature and memorize the remaining as the noise without learning any new features.
+* Ensemble will allow the model to see multiple features.
