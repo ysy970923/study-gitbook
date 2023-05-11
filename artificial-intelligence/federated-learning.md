@@ -6,6 +6,35 @@ coverY: 0
 
 # Federated Learning
 
+### Personalized Federated Learning with Feature Alignment and Classifier Collaboration ([ICLR 2023](https://openreview.net/pdf?id=SXZr8aDKia))
+
+* FedPAC
+* Personalized FL Optimization Goal
+  * ![](broken-reference)
+  * Fit to the personal data distribution
+  * But with R (regularization term) to prevent overfitting
+  * ![](broken-reference)
+* Sharing Feature Representation
+  * Feature Alignment By Regularization
+  * ![](broken-reference)
+  * c is global feature centroid
+  * ![](broken-reference)
+  * local feature centroid is extracted through single pass on local dataset
+* Classifier Collaboration
+  * Leverage other's classifier too!
+    * Different from previous works(GFL, PFL)
+  * weighted average with higher weights to clients with similar data distribution
+
+### Turning the Curse of Heterogeneity in Federated Learning into a Blessing for Out-of-Distribution Detection ([ICLR 2023](https://openreview.net/pdf?id=mMNimwRb7Gr))
+
+* Difficulty in existing OoD detection methods in FL
+  * require large amount of OoD samples
+  * difficult to obtain, and use on local devices
+* Leverage non iid characteristic in FL as an advantage
+  * non iid other clients' data serve as OoD
+  * specially samples in unseen external classes
+* Look into paper for more details...
+
 ### Adaptive Federated Optimization ([ICLR 2021](https://github.com/ysy970923/study/blob/main/AI))
 
 * problem: standard federated optimization methods have problems, use adaptive optimization methods like methods in non-federated learning
@@ -14,16 +43,12 @@ coverY: 0
   * FedADAGRAD, FedYOGI, FedADAM
   *
 
-\
-\\
-
 ### No Fear of Heterogeneity: Classifier Calibratoin for Federated Learning with Non-IID Data ([NIPS 2021](https://proceedings.neurips.cc/paper/2021/file/2f2b265625d76a6704b08093c652fd79-Paper.pdf))
 
 * problem: previous works handling non-IID data lacks deep understading of how data heterogeneity affects each layers.
 * goal: analysis on each layers, CCVR(Classifier Calibration with Virtual Representations)
 * The Devil Is In Classifier
-* CKA similarity: ...\
-  \\
+* CKA similarity: ...
 
 ### What Do We Mean By Generalization In Federated Learning? ([ICLR 2022](https://openreview.net/pdf?id=VimqQq-i\_Q))
 
@@ -38,8 +63,7 @@ coverY: 0
   * Natural partitioning (like emnist) represents client heterogeneity better than label-based partitioning
   * Sementic Client Partitioning
     * close to natural partitioning in centralized dataset
-* personal opinion: new approach, but iffy about the situation\
-  \\
+* personal opinion: new approach, but iffy about the situation
 
 ### Sageflow: Robust Federated Learning against Both Stragglers and Adversaries ([NIPS 2021](https://proceedings.neurips.cc/paper/2021/file/076a8133735eb5d7552dc195b125a454-Paper.pdf))
 
@@ -56,8 +80,7 @@ coverY: 0
     * weight inverse to loss (less loss -> higher weight)
     * effective for data poison attacks
   * Both methods are complementary
-* personal opinion: using public data can be a limitation in federated learning\
-  \\
+* personal opinion: using public data can be a limitation in federated learning
 
 ### Efficient Split-Mix Federated Learning For On-Demand and In-Situ Customization ([ICLR 2022](https://openreview.net/pdf?id=\_QLmakITKg))
 
@@ -96,8 +119,7 @@ coverY: 0
     [![image](https://user-images.githubusercontent.com/57357447/130955251-a1ca4d4e-0f5a-461f-8fde-2c6567723592.png)](https://user-images.githubusercontent.com/57357447/130955251-a1ca4d4e-0f5a-461f-8fde-2c6567723592.png)
 * faster convergence, higher performance than other SOTA methods
 * personal opinion: mathematically proven method, good performance in experiment
-* personal implementation(not ready)\
-  \\
+* personal implementation(not ready)
 
 ### HeteroFL: Computation And Communication Efficient Federated Learning For Heterogeneous Clients ([ICLR 2021](https://openreview.net/pdf?id=TNkPBBYFkXg))
 
@@ -108,8 +130,7 @@ coverY: 0
   * Static Batch Normalization: do not track running statistics at train time, query to local clients after train process
   * Scaler: like dropout, scale to match inference
 * personal opinion: important concept and goal, experiment results are controversial (can see in open review)
-* personal implementation(not ready)\
-  \\
+* personal implementation(not ready)
 
 ### Group Knowledge Transfer: Federated Learning of Large CNNs at the Edge ([NIPS 2020](https://proceedings.neurips.cc/paper/2020/file/a1d4c20b182ad7137ab3606f0e3fc8a4-Paper.pdf))
 
@@ -121,8 +142,7 @@ coverY: 0
 * discussion:
   * privacy: can get raw data from feature map
   * communication cost: depends on number of data points (cost can be larger than transferring model or gradient)
-* personal opinion: FL is used mainly due to privacy issues, but it seems in this way raw data can be achieved from feature maps\
-  \\
+* personal opinion: FL is used mainly due to privacy issues, but it seems in this way raw data can be achieved from feature maps
 
 ### Ensemble Distillation for Robust Model Fustion in Federated Learning ([NIPS 2021](https://proceedings.neurips.cc/paper/2020/file/18df51b97ccd68128e994804f3eccc87-Supplemental.pdf))
 
@@ -140,8 +160,7 @@ coverY: 0
   * data fraction: only 1% data (of local training dataset) result in reasonably good fusion performance
 * personal opinion:
   * if enough distillation data, robust algorithm
-  * but I think relation between distillation data and target data seems to be studied more\
-    \\
+  * but I think relation between distillation data and target data seems to be studied more
 
 ### Federated Optimization for Heterogeneous Networks ([MLSys 2020](https://proceedings.mlsys.org/paper/2020/file/38af86134b65d0f10fe33d30dd76442e-Paper.pdf))
 
@@ -157,8 +176,7 @@ coverY: 0
     * allows for safely incorporating variable amounts of local work resulting from systems heterogeneity
 * remark:
   * personally think works well because terms are similar to FedDyn terms
-  * more non-iid(data heterogeneity), better improvement\
-    \\
+  * more non-iid(data heterogeneity), better improvement
 
 ### FedSplit: An algorithmic framework for fast federated optimization ([NIPS 2020](https://arxiv.org/pdf/2005.05238.pdf))
 
@@ -169,8 +187,7 @@ coverY: 0
 * personal opinion:
   * all proofs are in the paper
   * experiments were held on least squares and logistic regression, but not on deep neural networks
-  * experiment on deep neural networks seems to be needed\
-    \\
+  * experiment on deep neural networks seems to be needed
 
 ### Federated Learning with Only Positive Labels ([ICML 2020](https://arxiv.org/pdf/2004.10342.pdf))
 
@@ -181,8 +198,7 @@ coverY: 0
   * spreadout regularizer:
     * server performs additional optimization step for seperation of class embeddings
   * stochastic negative mining:
-    * modified version of spreadout regularizer\
-      \\
+    * modified version of spreadout regularizer
 
 ### Towards Model-Agnostic Federated Learning Using Knowledge Distillation
 
