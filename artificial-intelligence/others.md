@@ -2,6 +2,14 @@
 
 ## Other fields in Artificial Intelligence (Explainable AI, Compression, ...)
 
+### Humanity Certifying Superhuman Classifiers ([ICLR 2023](https://openreview.net/pdf?id=X5ZMzRYqUjB))
+
+* To get ground truth labels, we don't know the oracle(real) label
+* So we use human annotators for labeling
+* But human annotators are imperfect so this work focused on oracle accuracy and analyzed the oracle accuracy of humans and models
+* If the lower bound of model's oracle acc - upper bound of human annotator's oracle acc, more potential to show superhuman performance
+* Made two synthetic tasks with oracle rules to experiment
+
 ### Axiomatic Attribution for Deep Networks ([ICML 2017](https://arxiv.org/pdf/1703.01365.pdf))
 
 * problem: existing attribution methods violate either of the two axioms

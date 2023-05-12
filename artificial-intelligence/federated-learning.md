@@ -10,15 +10,15 @@ coverY: 0
 
 * FedPAC
 * Personalized FL Optimization Goal
-  * ![](broken-reference)
+  * ![](<../.gitbook/assets/image (1).png>)
   * Fit to the personal data distribution
   * But with R (regularization term) to prevent overfitting
-  * ![](broken-reference)
+  * ![](<../.gitbook/assets/image (4).png>)
 * Sharing Feature Representation
   * Feature Alignment By Regularization
-  * ![](broken-reference)
+  * ![](<../.gitbook/assets/image (7).png>)
   * c is global feature centroid
-  * ![](broken-reference)
+  * ![](<../.gitbook/assets/image (5).png>)
   * local feature centroid is extracted through single pass on local dataset
 * Classifier Collaboration
   * Leverage other's classifier too!
